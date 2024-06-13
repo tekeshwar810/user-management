@@ -14,6 +14,9 @@ app.get('/about', (req, res) => {
 app.get('/contact', (req, res) => {
     res.send('contact route 🎉 ')
   })
+  app.get('/signout', (req, res) => {
+    res.send('signout route 🎉 ')
+  })
 app.listen(PORT, () => {
   console.log(`✅ Server is running on port ${PORT}`);
 })
