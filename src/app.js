@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
   res.send('Hello World')
 })
 
-app.gets('/about', (req, res) => {
+app.get('/about', (req, res) => {
   res.send('About route 🎉 ')
 })
 
