@@ -20,6 +20,6 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
 // Import models
-// db.User = require('./user')(sequelize, Sequelize.DataTypes);
+db.User = require('./user')(sequelize, Sequelize.DataTypes);
 
 module.exports = db;
