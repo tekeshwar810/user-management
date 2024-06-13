@@ -1,7 +1,17 @@
 const express = require('express');
-
+const db = require('./models');
 const app = express()
 const PORT = 8000
+
+
+// Sync database
+db.sequelize.sync()
+  .then(() => {
+    console.log('Database connected and synchronized.');
+  })
+  .catch(err => {
+    console.error('Unable to connect to the database:', err);
+  });
 
 const user = require('./routes/user');
 
