@@ -7,7 +7,7 @@ const PORT = 8000
 // Sync database
 db.sequelize.sync()
   .then(() => {
-    console.log('Database connected and synchronized.');
+    console.log('Database connected and synchronized..');
   })
   .catch(err => {
     console.error('Unable to connect to the database:', err);
